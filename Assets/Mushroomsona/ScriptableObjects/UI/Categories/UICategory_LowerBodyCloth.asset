@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51551d8d21de6f24d95d645de5fb4283, type: 3}
+  m_Name: UICategory_LowerBodyCloth
+  m_EditorClassIdentifier: 
+  _name: LowerBodyCloth
+  _uIElementsCollection:
+  - {fileID: 11400000, guid: daab47139dbac9c429fe6d70fc18f5b8, type: 2}
+  - {fileID: 11400000, guid: f0e626e4f728b5b4c8a0240393ac001c, type: 2}

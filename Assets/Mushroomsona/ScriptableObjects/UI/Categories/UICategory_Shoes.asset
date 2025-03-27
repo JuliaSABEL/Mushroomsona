@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51551d8d21de6f24d95d645de5fb4283, type: 3}
+  m_Name: UICategory_Shoes
+  m_EditorClassIdentifier: 
+  _name: Shoes
+  _uIElementsCollection:
+  - {fileID: 11400000, guid: 3ee35e52488b5d54293230cf054391e4, type: 2}
+  - {fileID: 11400000, guid: ec1b432c692d86a4baa807e52120b839, type: 2}
