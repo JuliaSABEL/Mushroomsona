@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51551d8d21de6f24d95d645de5fb4283, type: 3}
   m_Name: UICategory_FaceFeature
   m_EditorClassIdentifier: 
-  _name: FaceFeature
-  _uIElementsCollection:
+  uIElementsCollection:
   - {fileID: 11400000, guid: b04bacba49b0b5243b91805310fb8693, type: 2}
   - {fileID: 11400000, guid: 10d5fe769ce5ba746b0342badf2cd2e9, type: 2}

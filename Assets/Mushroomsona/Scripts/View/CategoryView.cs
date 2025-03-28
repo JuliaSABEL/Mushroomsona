@@ -5,46 +5,44 @@ using UnityEngine.UI;
 
 public class CategoryView : MonoBehaviour
 {
-    [SerializeField] private GameObject _elementsPanel;
+    [SerializeField] private Transform _elementsPanel;
     [SerializeField] private GameObject _elementButtonPrefab;
-    [SerializeField] private UICategoryData _categoryData;
-    private List<GameObject> _elementsPool = new List<GameObject>();
+    private List<GameObject> _elementsPool = new();
 
     
-    public void ChangeCategory()
+    public void InitializeElements(UICategoryData category)
     {
         DeactivateElementsPanel();
-        
-        InitializeCurrentElements(_categoryData);
+
+        if (_elementsPool.Count <= 0)
+        {
+            for (int i = 0; i < category.uIElementsCollection.Count; i++)
+            {
+                _elementsPool.Add(Instantiate(_elementButtonPrefab, _elementsPanel));
+                
+                var poolElement = _elementsPool[i];
+                var dataElement = category.uIElementsCollection[i];
+                
+                poolElement.transform.Find("Icon").GetComponent<Image>().sprite = dataElement.sprite;
+                poolElement.name = dataElement.elementName;
+            }
+        }
+        else
+        {
+            foreach (var element in _elementsPool)
+            {
+                element.SetActive(true);
+            }
+            
+        }
     }
     
     
     private void DeactivateElementsPanel()
     {
-        foreach (Transform child in _elementsPanel.transform)
+        foreach (Transform child in _elementsPanel)
         {
             child.gameObject.SetActive(false);
-        }
-    }
-
-    private void InitializeCurrentElements(UICategoryData category)
-    {
-        if (_elementsPool.Count <= 0)
-        {
-            for (int i = 0; i < category._uIElementsCollection.Count; i++)
-            {
-                _elementsPool.Add(Instantiate(_elementButtonPrefab, _elementsPanel.transform));
-                _elementsPool[i].transform.Find("Icon").GetComponent<Image>().sprite = category._uIElementsCollection[i]._sprite;
-                _elementsPool[i].name = category._uIElementsCollection[i]._name;
-            }
-        }
-        else
-        {
-            foreach (GameObject element in _elementsPool)
-            {
-                element.SetActive(true);
-            }
-            
         }
     }
 }

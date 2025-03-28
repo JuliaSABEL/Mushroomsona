@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f017f5d8c525e4a899abe6bab6350b, type: 3}
   m_Name: UIElement_Bag_00
   m_EditorClassIdentifier: 
-  _name: Bag_00
-  _sprite: {fileID: 21300000, guid: 0293d415a0778354faf8316737e7b062, type: 3}
+  elementName: Bag_00
+  sprite: {fileID: 21300000, guid: 0293d415a0778354faf8316737e7b062, type: 3}

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f017f5d8c525e4a899abe6bab6350b, type: 3}
   m_Name: UIElement_Shoes_00
   m_EditorClassIdentifier: 
-  _name: Shoes_00
-  _sprite: {fileID: 21300000, guid: 94a3cd4a9b3c8844b91963a6308bb302, type: 3}
+  elementName: Shoes_00
+  sprite: {fileID: 21300000, guid: 94a3cd4a9b3c8844b91963a6308bb302, type: 3}

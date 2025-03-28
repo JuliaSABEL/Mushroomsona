@@ -1,17 +1,10 @@
-using System.Collections.Generic;
-
-
-public class CategoryModel
+public class CategoryModel 
 {
-    private Dictionary<string, List<UICategoryData>> _categories;
+    public UICategoryData CategoryData { get; private set; }
 
-    public CategoryModel(Dictionary<string, List<UICategoryData>> categoriesData)
+    
+    public CategoryModel(UICategoryData categoryData)
     {
-        _categories = categoriesData;
-    }
-
-    public List<UICategoryData> GetElementsForCategory(string category)
-    {
-        return _categories.ContainsKey(category) ? _categories[category] : new List<UICategoryData>();
+        CategoryData = categoryData;
     }
 }

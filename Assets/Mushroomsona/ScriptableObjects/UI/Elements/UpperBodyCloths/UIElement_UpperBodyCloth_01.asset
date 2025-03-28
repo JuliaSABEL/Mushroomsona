@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f017f5d8c525e4a899abe6bab6350b, type: 3}
   m_Name: UIElement_UpperBodyCloth_01
   m_EditorClassIdentifier: 
-  _name: UpperBodyCloth_01
-  _sprite: {fileID: 21300000, guid: fa8c10cd9dbd7ed439c7fb0215b82b26, type: 3}
+  elementName: UpperBodyCloth_01
+  sprite: {fileID: 21300000, guid: fa8c10cd9dbd7ed439c7fb0215b82b26, type: 3}

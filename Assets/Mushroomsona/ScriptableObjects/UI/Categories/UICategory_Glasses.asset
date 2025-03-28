@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51551d8d21de6f24d95d645de5fb4283, type: 3}
   m_Name: UICategory_Glasses
   m_EditorClassIdentifier: 
-  _name: Glasses
-  _uIElementsCollection:
+  uIElementsCollection:
   - {fileID: 11400000, guid: c1b2b2884f05d9a499dd8f0b5c1a2d68, type: 2}
   - {fileID: 11400000, guid: d847c2ba19836144db465f4fc9cf92af, type: 2}

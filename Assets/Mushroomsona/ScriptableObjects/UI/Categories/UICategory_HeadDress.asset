@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51551d8d21de6f24d95d645de5fb4283, type: 3}
   m_Name: UICategory_HeadDress
   m_EditorClassIdentifier: 
-  _name: HeadDress
-  _uIElementsCollection:
+  uIElementsCollection:
   - {fileID: 11400000, guid: 0054b392881b91b41a2dbc627f9a1d5a, type: 2}
   - {fileID: 11400000, guid: 925cced0ddfed5c4486fc723355c5631, type: 2}

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f017f5d8c525e4a899abe6bab6350b, type: 3}
   m_Name: UIElement_Glasses_00
   m_EditorClassIdentifier: 
-  _name: Glasses_00
-  _sprite: {fileID: 21300000, guid: 2286eb7bcd1e91d4d9d9c20ca0af53b8, type: 3}
+  elementName: Glasses_00
+  sprite: {fileID: 21300000, guid: 2286eb7bcd1e91d4d9d9c20ca0af53b8, type: 3}

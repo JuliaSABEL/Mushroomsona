@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51551d8d21de6f24d95d645de5fb4283, type: 3}
   m_Name: UICategory_HeadDots
   m_EditorClassIdentifier: 
-  _name: HeadDots
-  _uIElementsCollection:
+  uIElementsCollection:
   - {fileID: 11400000, guid: 2c05d3c4e77b143489b849b7dedb8131, type: 2}
   - {fileID: 11400000, guid: 4627aa5e8e7fb5f488b4ecae67625639, type: 2}

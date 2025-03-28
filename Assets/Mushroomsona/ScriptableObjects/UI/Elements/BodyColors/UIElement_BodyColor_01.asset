@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f017f5d8c525e4a899abe6bab6350b, type: 3}
   m_Name: UIElement_BodyColor_01
   m_EditorClassIdentifier: 
-  _name: BodyColor_01
-  _sprite: {fileID: 21300000, guid: 9acbf50e55cb44945a692a91239a836a, type: 3}
+  elementName: BodyColor_01
+  sprite: {fileID: 21300000, guid: 9acbf50e55cb44945a692a91239a836a, type: 3}

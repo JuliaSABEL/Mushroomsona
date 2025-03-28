@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51551d8d21de6f24d95d645de5fb4283, type: 3}
   m_Name: UICategory_UpperBodyCloth
   m_EditorClassIdentifier: 
-  _name: UpperBodyCloth
-  _uIElementsCollection:
+  uIElementsCollection:
   - {fileID: 11400000, guid: 83d06de5ef8b15c49bf3090f0c36db7b, type: 2}
   - {fileID: 11400000, guid: 0566d9a191b3cc240a0da8ae26c2e01a, type: 2}

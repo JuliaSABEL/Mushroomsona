@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f017f5d8c525e4a899abe6bab6350b, type: 3}
   m_Name: UIElement_FaceFeature_01
   m_EditorClassIdentifier: 
-  _name: FaceFeature_01
-  _sprite: {fileID: 21300000, guid: f6412778d43021147bf290cf8a32404f, type: 3}
+  elementName: FaceFeature_01
+  sprite: {fileID: 21300000, guid: f6412778d43021147bf290cf8a32404f, type: 3}

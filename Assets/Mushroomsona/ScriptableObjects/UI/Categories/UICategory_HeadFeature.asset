@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51551d8d21de6f24d95d645de5fb4283, type: 3}
   m_Name: UICategory_HeadFeature
   m_EditorClassIdentifier: 
-  _name: HeadFeature
-  _uIElementsCollection:
+  uIElementsCollection:
   - {fileID: 11400000, guid: 0440a3efab15ec94284f94765b74ecaf, type: 2}
   - {fileID: 11400000, guid: cb260972f01d8264ea850c3f3c374e66, type: 2}

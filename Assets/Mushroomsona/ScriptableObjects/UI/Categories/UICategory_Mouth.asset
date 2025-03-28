@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51551d8d21de6f24d95d645de5fb4283, type: 3}
   m_Name: UICategory_Mouth
   m_EditorClassIdentifier: 
-  _name: Mouth
-  _uIElementsCollection:
+  uIElementsCollection:
   - {fileID: 11400000, guid: 27c9e37fb1e9d2c41a3b6d1fe91a865b, type: 2}
   - {fileID: 11400000, guid: 67db3e220477ed6458f542eea405aaa0, type: 2}

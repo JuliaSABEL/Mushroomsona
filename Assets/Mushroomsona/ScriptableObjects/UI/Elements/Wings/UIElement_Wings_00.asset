@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f017f5d8c525e4a899abe6bab6350b, type: 3}
   m_Name: UIElement_Wings_00
   m_EditorClassIdentifier: 
-  _name: Wings_00
-  _sprite: {fileID: 21300000, guid: 8f3c620d235f17842b4d2a44aa22fdfa, type: 3}
+  elementName: Wings_00
+  sprite: {fileID: 21300000, guid: 8f3c620d235f17842b4d2a44aa22fdfa, type: 3}
