@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51551d8d21de6f24d95d645de5fb4283, type: 3}
-  m_Name: UICategory_BodyColor
+  m_Script: {fileID: 11500000, guid: f8ed92934ccb0ff488832f63392b293a, type: 3}
+  m_Name: SceneCategory_BodyColor
   m_EditorClassIdentifier: 
-  uIElementsCollection:
-  - {fileID: 11400000, guid: 5818b1c0871cb7645baca831bbf92bf4, type: 2}
-  - {fileID: 11400000, guid: f22adb35b1b09aa47b9743b9a8fe957a, type: 2}
+  sceneElementsCollection:
+  - {fileID: 11400000, guid: d25cdfd0e4d34d44da93d5aae24dfd93, type: 2}
+  - {fileID: 11400000, guid: 107d5f86b78d692469ebff14835e5972, type: 2}
   categoryName: BodyColor
+  layer: 0

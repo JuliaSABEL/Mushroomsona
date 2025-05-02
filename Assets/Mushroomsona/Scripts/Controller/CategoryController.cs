@@ -11,6 +11,9 @@ public class CategoryController : MonoBehaviour
     private void Awake()
     {
         _categoryModel = new CategoryModel(_categoryData);
+
+        if (gameObject.name == "BodyColor")
+            _categoryView.InitializeElements(_categoryModel.CategoryData);
     }
     
     

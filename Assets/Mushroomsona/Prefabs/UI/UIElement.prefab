@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8964086232567235181}
   - component: {fileID: 956238847545007927}
   - component: {fileID: 1608411787595657714}
+  - component: {fileID: 5744816799891781568}
   m_Layer: 5
   m_Name: UIElement
   m_TagString: Untagged
@@ -120,7 +121,52 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 956238847545007927}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5744816799891781568}
+        m_TargetAssemblyTypeName: ElementView, Assembly-CSharp
+        m_MethodName: OnElementButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5744816799891781568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6700185627017768178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e176a8be3f6a1b7418a823fdf00cc4f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sceneCategories:
+  - {fileID: 11400000, guid: 93ca4d69a47f20440afde70deecacf0e, type: 2}
+  - {fileID: 11400000, guid: d7d56c59ab06c064a8131c9b98e95696, type: 2}
+  - {fileID: 11400000, guid: 03865e477ebd8094398997cbd45df218, type: 2}
+  - {fileID: 11400000, guid: b4de445a87e2fee43acefa65c6aef9ee, type: 2}
+  - {fileID: 11400000, guid: b9c1a50d79bfc2d4888fc91566575fe7, type: 2}
+  - {fileID: 11400000, guid: 0e6c56ed90b3912449e8a8e5194ac555, type: 2}
+  - {fileID: 11400000, guid: ab5abc8cf9d6f444aa8961beab89b69f, type: 2}
+  - {fileID: 11400000, guid: a16c194ea423d2743bebbcdd8cf149c5, type: 2}
+  - {fileID: 11400000, guid: 06a69d6f62654094399034cd6153f274, type: 2}
+  - {fileID: 11400000, guid: 4be47558f8afbd74288b4bd8919ca90b, type: 2}
+  - {fileID: 11400000, guid: ebf1580f03f9ebd4595a75de8c402498, type: 2}
+  - {fileID: 11400000, guid: ecb7d879309bee94aa65cd7b6bf8475b, type: 2}
+  - {fileID: 11400000, guid: 9d6190dba30162c44ae1bf45005fbaa5, type: 2}
+  - {fileID: 11400000, guid: 04a853ce2a931b943990bae0f37ecd8c, type: 2}
+  - {fileID: 11400000, guid: 1ed43cee665b4e340ae948669fe63f4b, type: 2}
+  - {fileID: 11400000, guid: a4e02c0e2339b3746ac1a14e34a25a0c, type: 2}
+  - {fileID: 11400000, guid: 036dcb0d4da085c4a9eb1c810e70a23a, type: 2}
+  - {fileID: 11400000, guid: 5a0f976721b5c6b4abe145eb1b7a607c, type: 2}
+  - {fileID: 11400000, guid: 5fdfe517b68c3994793c5ca856362bf7, type: 2}
+  _elementPrefab: {fileID: 6632876262115532417, guid: 5f1579ab5ab8a5f45af8e696207c6b78, type: 3}
 --- !u!1 &6926662881020098788
 GameObject:
   m_ObjectHideFlags: 0

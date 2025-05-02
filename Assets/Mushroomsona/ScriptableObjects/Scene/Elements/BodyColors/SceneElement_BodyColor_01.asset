@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51551d8d21de6f24d95d645de5fb4283, type: 3}
-  m_Name: UICategory_Necklace
+  m_Script: {fileID: 11500000, guid: 6247759481e8d46449051b0dbe6b9f11, type: 3}
+  m_Name: SceneElement_BodyColor_01
   m_EditorClassIdentifier: 
-  uIElementsCollection:
-  - {fileID: 11400000, guid: 9df32d83169c0794e8093288b62675d5, type: 2}
-  - {fileID: 11400000, guid: 35193b05f7636c74aacdb2224444fe73, type: 2}
+  elementName: BodyColor_01
+  sprite: {fileID: 21300000, guid: 9acbf50e55cb44945a692a91239a836a, type: 3}
+  position: {x: 0, y: 0}

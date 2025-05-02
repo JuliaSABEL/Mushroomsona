@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8ed92934ccb0ff488832f63392b293a, type: 3}
+  m_Name: SceneCategory_HeadColor
+  m_EditorClassIdentifier: 
+  sceneElementsCollection:
+  - {fileID: 11400000, guid: b3e4f7cedbb5f3a49baa4e862354a8a6, type: 2}
+  - {fileID: 11400000, guid: c010101ea770d864189f6170faf5dbae, type: 2}
+  categoryName: HeadColor
+  layer: 0
