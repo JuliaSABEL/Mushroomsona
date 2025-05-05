@@ -146,6 +146,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e176a8be3f6a1b7418a823fdf00cc4f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _startSceneElements:
+  - {fileID: 11400000, guid: d25cdfd0e4d34d44da93d5aae24dfd93, type: 2}
+  - {fileID: 11400000, guid: 5eee9d4d3a4d5f24ea66855f1b1c0dfe, type: 2}
+  - {fileID: 11400000, guid: 31347fef5a077aa4ca9861ebcd5707c1, type: 2}
+  - {fileID: 11400000, guid: b3e4f7cedbb5f3a49baa4e862354a8a6, type: 2}
   _sceneCategories:
   - {fileID: 11400000, guid: 93ca4d69a47f20440afde70deecacf0e, type: 2}
   - {fileID: 11400000, guid: d7d56c59ab06c064a8131c9b98e95696, type: 2}

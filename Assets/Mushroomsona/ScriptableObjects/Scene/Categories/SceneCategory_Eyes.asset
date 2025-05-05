@@ -17,3 +17,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d950d70a3e3f34046b0748dd58d6dcbd, type: 2}
   categoryName: Eyes
   layer: 0
+  isCategoryInvulnerable: 1

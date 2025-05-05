@@ -1,39 +1,32 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 
 public class ElementView : MonoBehaviour
 {
-    [SerializeField] private List<SceneElementData> _startSceneElements;
     [SerializeField] private List<SceneCategoryData> _sceneCategories;
-    private Transform _elementCase;
     [SerializeField] private GameObject _elementPrefab;
-    private List<GameObject> _elementPool = new();
-    private List<GameObject> _categoryPool = new();
-    private SceneCategoryData _category;
-    private SceneElementData _element;
-    
-    
+    private Transform _elementCase;
+    private SceneCategoryData _categoryData;
+    private SceneElementData _elementData;
+    private GameObject _poolElement;
+
+
     private void Start()
     {
         _elementCase = GameObject.Find("SceneElements").transform;
     }
-    
-    
+
+
     public void OnElementButtonClicked()
     {
-        SelectSceneData(_sceneCategories);
-        InitializeElement(_element);
+        SetSceneData(_sceneCategories);
+
+        InitializeElement(_elementData);
     }
 
 
-    private void StartInitialization()
-    {
-        
-    }
-    
-    private void SelectSceneData(List<SceneCategoryData> sceneCategories)
+    private void SetSceneData(List<SceneCategoryData> sceneCategories)
     {
         foreach (var category in sceneCategories)
         {
@@ -41,51 +34,47 @@ public class ElementView : MonoBehaviour
             {
                 if (element.elementName == gameObject.name)
                 {
-                    _category = category;
-                    _element = element;
+                    _categoryData = category;
+                    _elementData = element;
                 }
             }
         }
     }
-    
+
     private void InitializeElement(SceneElementData element)
     {
-        // DeactivateCategory();
-        //
-        // if (_elementPool.Count <= 0)
-        // {
-        //     _elementPool.Add(Instantiate(_elementPrefab, _elementCase)); 
-        //     
-        //     _elementPool[0].GetComponent<SpriteRenderer>().sprite = element.sprite;
-        //     for (int i = 0; i < category.uIElementsCollection.Count; i++)
-        //     {
-        //         _elementsPool.Add(Instantiate(_elementButtonPrefab, _elementsPanel));
-        //         
-        //         var poolElement = _elementsPool[i];
-        //         var dataElement = category.uIElementsCollection[i];
-        //         
-        //         poolElement.transform.Find("Icon").GetComponent<Image>().sprite = dataElement.sprite;
-        //         poolElement.name = dataElement.elementName;
-        //     }
-        // }
-        // else
-        // {
-        //     foreach (var /*element*/ in _elementsPool)
-        //     {
-        //         element.SetActive(true);
-        //     }
-        //     
-        // }
-    }
-    
-    private void DeactivateCategory()
-    {
-        if (_categoryPool.Count > 0)
+        DeactivateCategoryElements();
+
+        if (_poolElement == null)
         {
-            foreach (var child in _categoryPool)
+            _poolElement = Instantiate(_elementPrefab, _elementCase);
+
+            var spriteRenderer = _poolElement.GetComponent<SpriteRenderer>();
+            spriteRenderer.sprite = element.sprite;
+            spriteRenderer.sortingOrder = _categoryData.layer;
+            _poolElement.name = element.elementName;
+            _poolElement.transform.position = element.position;
+        }
+        else
+        {
+            _poolElement.SetActive(true);
+        }
+    }
+
+    private void DeactivateCategoryElements()
+    {
+        foreach (Transform child in _elementCase)
+        {
+            for (int i = 0; i < _categoryData.sceneElementsCollection.Count; i++)
             {
-                child.SetActive(false);
-            } 
+                foreach (SceneElementData elementData in _categoryData.sceneElementsCollection)
+                {
+                    if (child.gameObject.name == elementData.elementName)
+                    {
+                        child.gameObject.SetActive(false);
+                    }
+                }
+            }
         }
     }
 }

@@ -8,4 +8,5 @@ public class SceneCategoryData : ScriptableObject
     public List<SceneElementData> sceneElementsCollection;
     public string categoryName;
     public int layer;
+    public bool isCategoryInvulnerable;
 }
