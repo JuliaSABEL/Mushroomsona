@@ -16,4 +16,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2a759ff909ed97942b4fde175364719b, type: 2}
   - {fileID: 11400000, guid: 079993dd61449654daaea44fa163710d, type: 2}
   categoryName: LowerBodyCloth
-  layer: 0
+  layer: 8
+  isCategoryInvulnerable: 0

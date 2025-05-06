@@ -16,4 +16,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 644af73b52e4c1045bf4b97f302af011, type: 2}
   - {fileID: 11400000, guid: 909dbce10f6f31d448c2a915f9719a86, type: 2}
   categoryName: UpperBodyCloth
-  layer: 0
+  layer: 9
+  isCategoryInvulnerable: 0

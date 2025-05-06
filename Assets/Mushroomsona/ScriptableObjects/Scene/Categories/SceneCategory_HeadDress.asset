@@ -16,4 +16,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1c2f0b70d7ecc9a4899cee47a1e35541, type: 2}
   - {fileID: 11400000, guid: cbb04c5e07f4cea42ad139726ee1fcb7, type: 2}
   categoryName: HeadDress
-  layer: 0
+  layer: 20
+  isCategoryInvulnerable: 0

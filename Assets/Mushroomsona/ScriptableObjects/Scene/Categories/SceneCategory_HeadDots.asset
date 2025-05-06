@@ -16,4 +16,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 87188f93290b0914b9b11e20b2a46c46, type: 2}
   - {fileID: 11400000, guid: 1b5dcfe15846cb34c82bd9d266dfac86, type: 2}
   categoryName: HeadDots
-  layer: 0
+  layer: 18
+  isCategoryInvulnerable: 0

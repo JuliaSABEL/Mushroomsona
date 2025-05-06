@@ -16,4 +16,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 63c51c10b436c13478f4c4a68d7afb52, type: 2}
   - {fileID: 11400000, guid: 5797595168422804a94752c2a8a162a8, type: 2}
   categoryName: BodyFeature
-  layer: 0
+  layer: 6
+  isCategoryInvulnerable: 0

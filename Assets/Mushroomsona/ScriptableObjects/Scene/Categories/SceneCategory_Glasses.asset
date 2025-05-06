@@ -16,4 +16,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ad1c4baeaa967a54b943df40c7742ad5, type: 2}
   - {fileID: 11400000, guid: 634f1a9d773e40142bc67faa1a104606, type: 2}
   categoryName: Glasses
-  layer: 0
+  layer: 17
+  isCategoryInvulnerable: 0

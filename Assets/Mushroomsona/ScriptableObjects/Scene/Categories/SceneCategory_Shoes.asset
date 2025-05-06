@@ -16,4 +16,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d06cf4cfa5539ca41acb66887568624b, type: 2}
   - {fileID: 11400000, guid: 50d1f16a2a4c4c546b288ec2ab221ba5, type: 2}
   categoryName: Shoes
-  layer: 0
+  layer: 11
+  isCategoryInvulnerable: 0

@@ -16,4 +16,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4d1b16b09285b8143a735943d4689865, type: 2}
   - {fileID: 11400000, guid: 52dbcddd193cbdb408cb7214a9e9bf8b, type: 2}
   categoryName: Bag
-  layer: 0
+  layer: 10
+  isCategoryInvulnerable: 0

@@ -22,7 +22,14 @@ public class ElementView : MonoBehaviour
     {
         SetSceneData(_sceneCategories);
 
-        InitializeElement(_elementData);
+        if (_poolElement != null && _poolElement.activeSelf && _categoryData.isCategoryInvulnerable == false)
+        {
+            _poolElement.SetActive(false);
+        }
+        else
+        {
+            InitializeElement(_elementData);
+        }
     }
 
 
@@ -55,10 +62,8 @@ public class ElementView : MonoBehaviour
             _poolElement.name = element.elementName;
             _poolElement.transform.position = element.position;
         }
-        else
-        {
-            _poolElement.SetActive(true);
-        }
+        
+        _poolElement.SetActive(true);
     }
 
     private void DeactivateCategoryElements()

@@ -16,4 +16,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3f88c16aa8ae4ce4ba74f2b387232e68, type: 2}
   - {fileID: 11400000, guid: 2a4168ba7b7ab9b408eee28061b28614, type: 2}
   categoryName: Item
-  layer: 0
+  layer: 21
+  isCategoryInvulnerable: 0

@@ -16,4 +16,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c605f57c78c04024490d9aad4727b629, type: 2}
   - {fileID: 11400000, guid: bfed5fb6bb8df2f42a476f1f8922625d, type: 2}
   categoryName: FullBodyCloth
-  layer: 0
+  layer: 8
+  isCategoryInvulnerable: 0

@@ -16,4 +16,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8a27301e3cf81bd40be6eef6a2eb8c17, type: 2}
   - {fileID: 11400000, guid: 83ed999d6b0372e47878fb5536799971, type: 2}
   categoryName: Bracelet
-  layer: 0
+  layer: 12
+  isCategoryInvulnerable: 0

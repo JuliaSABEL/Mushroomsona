@@ -16,5 +16,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b3e4f7cedbb5f3a49baa4e862354a8a6, type: 2}
   - {fileID: 11400000, guid: c010101ea770d864189f6170faf5dbae, type: 2}
   categoryName: HeadColor
-  layer: 0
+  layer: 3
   isCategoryInvulnerable: 1
