@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8964086232567235181}
   - component: {fileID: 956238847545007927}
   - component: {fileID: 1608411787595657714}
+  - component: {fileID: 3242641440112851592}
   - component: {fileID: 5744816799891781568}
   m_Layer: 5
   m_Name: UIElement
@@ -122,8 +123,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5744816799891781568}
-        m_TargetAssemblyTypeName: ElementView, Assembly-CSharp
+      - m_Target: {fileID: 3242641440112851592}
+        m_TargetAssemblyTypeName: ElementController, Assembly-CSharp
         m_MethodName: OnElementButtonClicked
         m_Mode: 1
         m_Arguments:
@@ -134,7 +135,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5744816799891781568
+--- !u!114 &3242641440112851592
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,14 +144,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6700185627017768178}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e176a8be3f6a1b7418a823fdf00cc4f1, type: 3}
+  m_Script: {fileID: 11500000, guid: de7af7583c9d8104681b0945be5376b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startSceneElements:
-  - {fileID: 11400000, guid: d25cdfd0e4d34d44da93d5aae24dfd93, type: 2}
-  - {fileID: 11400000, guid: 5eee9d4d3a4d5f24ea66855f1b1c0dfe, type: 2}
-  - {fileID: 11400000, guid: 31347fef5a077aa4ca9861ebcd5707c1, type: 2}
-  - {fileID: 11400000, guid: b3e4f7cedbb5f3a49baa4e862354a8a6, type: 2}
+  _elementView: {fileID: 5744816799891781568}
   _sceneCategories:
   - {fileID: 11400000, guid: 93ca4d69a47f20440afde70deecacf0e, type: 2}
   - {fileID: 11400000, guid: d7d56c59ab06c064a8131c9b98e95696, type: 2}
@@ -171,6 +168,19 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 036dcb0d4da085c4a9eb1c810e70a23a, type: 2}
   - {fileID: 11400000, guid: 5a0f976721b5c6b4abe145eb1b7a607c, type: 2}
   - {fileID: 11400000, guid: 5fdfe517b68c3994793c5ca856362bf7, type: 2}
+  _uiElement: {fileID: 6700185627017768178}
+--- !u!114 &5744816799891781568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6700185627017768178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e176a8be3f6a1b7418a823fdf00cc4f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _elementPrefab: {fileID: 6632876262115532417, guid: 5f1579ab5ab8a5f45af8e696207c6b78, type: 3}
 --- !u!1 &6926662881020098788
 GameObject:

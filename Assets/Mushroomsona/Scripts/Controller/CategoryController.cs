@@ -12,8 +12,8 @@ public class CategoryController : MonoBehaviour
     {
         _categoryModel = new CategoryModel(_categoryData);
 
-        if (gameObject.name == "BodyColor")
-            _categoryView.InitializeElements(_categoryModel.CategoryData);
+        if (gameObject.name == "BodyColor") //игнор
+            _categoryView.InitializeElements(_categoryModel.CategoryData); //игнор
     }
     
     
