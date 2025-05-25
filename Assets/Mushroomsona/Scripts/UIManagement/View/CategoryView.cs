@@ -3,12 +3,18 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class CategoryView : MonoBehaviour
+public class CategoryView
 {
-    [SerializeField] private Transform _elementsPanel;
-    [SerializeField] private GameObject _elementButtonPrefab;
-    private List<GameObject> _elementsPool = new();
+    private readonly Transform _elementsPanel;
+    private readonly GameObject _elementButtonPrefab;
+    private readonly List<GameObject> _elementsPool = new();
 
+    
+    public CategoryView(Transform elementsPanel, GameObject elementButtonPrefab)
+    {
+        _elementsPanel = elementsPanel;
+        _elementButtonPrefab = elementButtonPrefab;
+    }
     
     public void InitializeElements(UICategoryData category)
     {
@@ -18,7 +24,7 @@ public class CategoryView : MonoBehaviour
         {
             for (int i = 0; i < category.uIElementsCollection.Count; i++)
             {
-                _elementsPool.Add(Instantiate(_elementButtonPrefab, _elementsPanel));
+                _elementsPool.Add(GameObject.Instantiate(_elementButtonPrefab, _elementsPanel));
                 
                 var poolElement = _elementsPool[i];
                 var dataElement = category.uIElementsCollection[i];

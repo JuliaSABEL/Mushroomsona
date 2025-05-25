@@ -1,19 +1,19 @@
 using UnityEngine;
 
 
-public class ElementView : MonoBehaviour
+public class ElementView
 {
-    [SerializeField] private GameObject _elementPrefab;
     public GameObject PoolElement { get; private set; }
     
-    private Transform _elementCase;
-
+    private readonly GameObject _elementPrefab;
+    private readonly Transform _elementCase;
     
-    private void Start()
+    
+    public ElementView(GameObject elementPrefab, Transform elementCase)
     {
-        _elementCase = GameObject.Find("SceneElements")?.transform;
+        _elementPrefab = elementPrefab;
+        _elementCase = elementCase;
     }
-
     
     public void InitializeElement(SceneElementData element, SceneCategoryData category)
     {
@@ -29,7 +29,7 @@ public class ElementView : MonoBehaviour
             }
             else
             {
-                PoolElement = Instantiate(_elementPrefab, _elementCase);
+                PoolElement = GameObject.Instantiate(_elementPrefab, _elementCase);
                 var spriteRenderer = PoolElement.GetComponent<SpriteRenderer>();
 
                 spriteRenderer.sprite = element.sprite;

@@ -5,8 +5,10 @@ using UnityEngine;
 public class MushroomDataManager : MonoBehaviour
 {
     [SerializeField] private List<string> _defaultSceneElements;
+    [SerializeField] private string _defaultUICategory;
     
     public static MushroomDataManager Instance { get; private set; }
+    public string DefaultUICategory { get; private set; }
     public List<string> DefaultSceneElements { get; private set; }
     public List<string> ActiveSceneElements { get; set; }
     
@@ -23,5 +25,6 @@ public class MushroomDataManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         DefaultSceneElements = _defaultSceneElements;
+        DefaultUICategory = _defaultUICategory;
     }
 }

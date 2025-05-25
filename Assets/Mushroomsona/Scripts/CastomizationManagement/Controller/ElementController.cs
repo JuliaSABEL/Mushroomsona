@@ -4,11 +4,22 @@ using UnityEngine;
 
 public class ElementController : MonoBehaviour
 {
-    [SerializeField] private ElementView _elementView;
-    [SerializeField] private List<SceneCategoryData> _sceneCategories;
-    [SerializeField] private GameObject _uiElement;
-
     public ElementModel ElementModel { get; private set; }
+    
+    [SerializeField] private GameObject _elementPrefab;
+    [SerializeField] private GameObject _uiElement;
+    [SerializeField] private List<SceneCategoryData> _sceneCategories;
+    
+    private Transform _elementCase;
+    private ElementView _elementView;
+
+    
+    private void Start()
+    {
+        _elementCase = GameObject.Find("SceneElements")?.transform;
+        
+        _elementView = new ElementView(_elementPrefab, _elementCase);
+    }
 
     
     public void OnElementButtonClicked()
