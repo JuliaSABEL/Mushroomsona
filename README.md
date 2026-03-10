@@ -43,7 +43,8 @@ The main goal of the game is to encourage the player’s creativity by customizi
 * Bracelet
 * Wings
 
-![UI](Docs/Mushroomsona_Scr_0)
+![UI](Docs/Mushroomsona_Scr_0.png)
+
 The list of items within each category can be easily expanded by adding new options, and new categories can be introduced as well. The project architecture is designed to support this kind of scalability with minimal effort.
 ___
 ### Core Gameplay Loop
@@ -54,7 +55,26 @@ ___
 * If the player wants to remove a specific element, they click on it again.
 * If the player wants to reset all changes, they press the Reset button, and the character returns to its default state so a new look can be created again.
 
-Будущие изменения
-Обновление текстур с тестовых на production
-Добавление Фото Сцены для сохранения фотографии результата с возможностью добавлять фон
-Добавление функции просмотра рекламы для единоразового использования уникального предмета и покупку уникальных предметов за донат
+![Gameplay](Docs/gif_9.gif)
+___
+### Architectural Overview
+// Writing in progress
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Майбутні зміни
+Оновлення текстур з тестових на production
+Додати Фото Сцени для збереження фотографії результату з можливістю додавати фон
+Додавання функції перегляду реклами для одноразового використання унікального предмета та придбання унікальних предметів за донат
