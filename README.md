@@ -1,5 +1,5 @@
 # Mushroomsona 🍄
-## Casual 2D Mobile Customization Game Prototype (Android)
+## Casual 2D Character Customization Prototype (Android)
 ___
 ### Overview
 Mushroomsona is a casual 2D dress-up/customization game prototype where the player creates cute mushroom looks by combining different body parts and accessories.
@@ -43,5 +43,18 @@ The main goal of the game is to encourage the player’s creativity by customizi
 * Bracelet
 * Wings
 
+![UI](Docs/Mushroomsona_Scr_0)
 The list of items within each category can be easily expanded by adding new options, and new categories can be introduced as well. The project architecture is designed to support this kind of scalability with minimal effort.
 ___
+### Core Gameplay Loop
+* The player scrolls and selects the desired category.
+* In the desired category, the player selects an element that they consider aesthetically suitable for the character look they want to create.
+* The element is immediately displayed on the character.
+* The player goes through all categories and selects the necessary elements, creating a unique and interesting look.
+* If the player wants to remove a specific element, they click on it again.
+* If the player wants to reset all changes, they press the Reset button, and the character returns to its default state so a new look can be created again.
+
+Будущие изменения
+Обновление текстур с тестовых на production
+Добавление Фото Сцены для сохранения фотографии результата с возможностью добавлять фон
+Добавление функции просмотра рекламы для единоразового использования уникального предмета и покупку уникальных предметов за донат
