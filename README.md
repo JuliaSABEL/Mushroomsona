@@ -12,8 +12,7 @@ ___
 * Engine: Unity
 * Language: C#
 * Platform: Mobile devices (Android)
-* Architecture: MVC
-* Rendering: URP
+* Architecture: MVC, Singleton for manager classes.
 * Optimization: Object Pooling
 * UI: UGUI | Scroll Rect, Mask, Content Size Filter
 * State Management: Persistent data holder | Singleton for prototype scope
@@ -21,7 +20,7 @@ ___
 * Reusable Content: Prefabs
 * Version Control: Git
 ___
-### Gameplay Overview
+## Gameplay Overview
 The main goal of the game is to encourage the player’s creativity by customizing a cute mushroom character through selecting different visual parts. The customization is organized into the following categories:
 * Body Color
 * Head Color
@@ -57,15 +56,28 @@ ___
 
 ![Gameplay](Docs/gif_9.gif)
 ___
-### Architectural Overview
-// Writing in progress
+## Architectural Overview
+// Writing in progress!!!
 
+Проект побудований на архітектурі MVC, з чітким розділенням між моделлю, представленням та контролером. 
+Менеджер гри реалізований як сінглтон, що дозволяє легко керувати станом гри та даними. 
+Для оптимізації використовується об'єктний пулінг, що економить ресурси при створенні та знищенні об'єктів.
+### Core Systems
 
+Система кастомізації персонажа
+Система керування станом персонажа
+Система динамічної ініціалізації UI
+UI система: Canvas, Scroll Rect, Mask, Content Size Filter
 
+### Система кастомізації персонажа
 
+Система кастомізації персонажа розроблена чисто, за патерном MVC. Контролер створює об’єкт моделі персонажа, передаючи йому дані із ScriptableObject. Контролер відповідає за зчитування натискання користувача на UI елементи, що відповідають за предмети зовнішності, та оновлення вигляду персонажа. Вигляд за допомогою пулінгу створює та знищує об’єкти, що відображають вибрані користувачем предмети зовнішності, для оптимізації продуктивності.
 
+### Система керування станом персонажа
 
+Система керування станом персонажа реалізована у вигляді синглтона. Цей синглтон на даний момент зберігає дані про дефолтні елементи персонажа. Завдяки цьому дані про стан персонажа доступні з будь-якої частини проєкту, а також можна легко скинути стан персонажа до дефолтного, що використовується при натисканні кнопки Reset.
 
+### Система динамічної ініціалізації UI
 
 
 
@@ -78,3 +90,5 @@ ___
 Оновлення текстур з тестових на production
 Додати Фото Сцени для збереження фотографії результату з можливістю додавати фон
 Додавання функції перегляду реклами для одноразового використання унікального предмета та придбання унікальних предметів за донат
+
+// Writing in progress!!!

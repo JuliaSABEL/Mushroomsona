@@ -2,12 +2,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class MushroomDataManager : MonoBehaviour
+public class MushroomStateManager : MonoBehaviour
 {
     [SerializeField] private List<string> _defaultSceneElements;
     [SerializeField] private string _defaultUICategory;
     
-    public static MushroomDataManager Instance { get; private set; }
+    public static MushroomStateManager Instance { get; private set; }
     public string DefaultUICategory { get; private set; }
     public List<string> DefaultSceneElements { get; private set; }
     public List<string> ActiveSceneElements { get; set; }

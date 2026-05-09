@@ -13,7 +13,7 @@ public class ResetMushroomController : MonoBehaviour
     private void Start()
     {
         _view = new ResetMushroomView(_sceneElementsCase);
-        _defaultElements = MushroomDataManager.Instance.DefaultSceneElements;
+        _defaultElements = MushroomStateManager.Instance.DefaultSceneElements;
     }
 
     

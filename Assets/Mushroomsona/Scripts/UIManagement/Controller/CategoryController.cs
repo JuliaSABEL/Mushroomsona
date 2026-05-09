@@ -16,7 +16,7 @@ public class CategoryController : MonoBehaviour
         _categoryModel = new CategoryModel(_categoryData);
         _categoryView = new CategoryView(_elementsPanel, _elementButtonPrefab);
 
-        if (gameObject.name == MushroomDataManager.Instance.DefaultUICategory)
+        if (gameObject.name == MushroomStateManager.Instance.DefaultUICategory)
             _categoryView.InitializeElements(_categoryModel.CategoryData);
     }
     
